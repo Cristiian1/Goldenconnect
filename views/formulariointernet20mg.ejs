@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/formulariointernet20mg.css">
+    <title>Servicio de Internet y Formulario</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Formulario -->
+        <div class="form-container">
+            <h2>Estas Solicitando:</h2>
+            <form id="ofertaForm">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="correo" placeholder="Correo" required>
+                <input type="tel" name="telefono" placeholder="Teléfono" required>
+                <textarea name="descripcion" placeholder="Descripción" required></textarea>
+                <input type="number" name="descuento" placeholder="Descuento" required>
+                <button type="submit">Registrar Oferta</button>
+            </form>
+        </div>
+
+        <div class="info-container">
+            <h2>Internet Fibra Óptica</h2>
+            <p><strong>Velocidad:</strong> 20 MB</p>
+            <p>Disfruta de la mejor conexión a Internet para tu hogar o negocio, juegos y trabajo remoto.</p>
+            <p><strong>Precio:</strong> $29.99/mes</p>
+
+            <div class="button-container">
+                <button onclick="window.open('https://wa.me/3174102877', '_blank');">Contactar en línea</button>
+                <button onclick="window.location.href='tel:3147102844'">Llamar al 3147102844</button>
+                <button onclick="window.location.href='/planes'">Volver al inicio</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT PARA REGISTRAR LA OFERTA EN LA DB  -->
+    <script>
+        document.getElementById('ofertaForm').addEventListener('submit', function (e) {
+            e.preventDefault();  // Evita el comportamiento predeterminado del formulario (recarga de página)
+    
+            const formData = new FormData(this);  // Obtener datos del formulario
+            const data = new URLSearchParams(formData).toString(); // Convierte a una cadena
+    
+            fetch('/api/ofertas', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded' // Establece el tipo de contenido
+                },
+                body: data
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert(data.message);  // Muestra el mensaje de éxito
+                } else {
+                    alert('Hubo un error al registrar la oferta');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Error en el servidor');
+            });
+        });
+    </script>
+</body>
+</html>

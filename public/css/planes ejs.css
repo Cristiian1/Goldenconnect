@@ -1,0 +1,490 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #fffdfd;
+    color: #0b0b0c;
+}
+
+header {
+    color: #070606;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0; /* Asegura que no haya padding */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #020202;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #c9c506;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+section {
+    background-image: url(/img/FIBRAOPTICA.png);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    height: 600px;
+    width: 100%; /* Asegura que el section ocupe todo el ancho disponible */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: 100% 100%; /* Estira la imagen para cubrir el section */
+    background-position: center; /* Centra la imagen en el section */
+}
+
+
+.oferta {
+  width: 25%;
+  height: 500px;
+  margin: 20px;
+  border: 2px solid #050205;
+  padding: 15px;
+  border-radius: 5px;
+  backdrop-filter: blur(3px); /* Aplica el desenfoque */
+  box-shadow: 0 4px 8px rgba(233, 229, 1, 0.664);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.oferta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.oferta h3 {
+    font-family:monospace;
+    color: #fffbfb;
+    font-weight: bold; /* Hace el texto más grueso */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Agrega una sombra sutil para mayor contraste */
+}
+
+.oferta p {
+    color: #fffbfb;
+    font-size: 1.5rem;
+    font-weight: bold; /* Hace el texto más grueso */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Agrega una sombra sutil para mayor contraste */
+
+
+}
+
+.container {
+    display: flex;               /* Habilita Flexbox */
+    justify-content: center;     /* Centra horizontalmente */
+    align-items: center;         /* Centra verticalmente (opcional) */
+}
+
+.btn {
+    padding: 22px 24px;
+    color: #070505;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(20, 20, 20, 0.2);
+    margin-top: 40px; /* Ajusta este valor según necesites */
+}
+
+a{
+    font-size: 50%;
+}
+
+
+.btn:hover {
+    color: #000000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(219, 205, 0, 0.3);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+/* Estilos adicionales */
+#ofertas {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+/* que plan elegir  */
+.plan-recommender {
+    display: flex; /* Habilitar flexbox para la sección de planes */
+    align-items: center; /* Alinear verticalmente */
+    margin: 20px 0; /* Margen superior e inferior */
+}
+
+.plan-recommender img {
+    max-width: 100%; /* Asegúrate de que la imagen sea responsiva */
+    height: auto; /* Mantén la proporción de la imagen */
+}
+
+
+.text-center {
+    position: relative; /* Asegúrate de que el contenedor tenga posición relativa */
+    left: 40%; /* Cambia a 0 para alinearlo a la izquierda */
+    transform: translateX(-50%); /* Ajusta si es necesario */
+    text-align: left; /* Asegúrate de que el texto esté alineado a la izquierda */
+}
+
+
+
+
+
+  
+ 
+.btn-register{
+  width: 100%;
+  padding: 15px;
+  background-color: rgb(3, 87, 21);
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: large;
+  color: aliceblue;
+  margin-top: 20px;
+
+  /* para dar apariencia al boton  */
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+}
+
+
+.btn-register:hover,.btn-register:active{
+  color: aliceblue;
+  background-color: rgb(2, 99, 39);
+  border-color: aqua;
+}
+
+.btn-register:focus{
+  box-shadow: 0 0 0 3px aqua;
+}
+
+
+
+
+
+  /* Estilos boton REGISTER*/
+  .btn-register{
+    width: 100%;
+    padding: 15px;
+    background-color: #34D399;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+    color: #ffffff;
+    margin-top: 20px;
+    /* Para dar la apariencia de un boton */
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;  
+  }
+  .btn-register:hover,.btn-register:active{
+    color:#fff;
+    background-color: #10B981;
+    border-color:#10B981
+  ;
+  }
+  .btn-register:focus{
+    box-shadow:0 0 0 3px #10B981;
+  }
+
+
+ /* form User Registration */
+ .register-form{
+  width: 400px;
+  margin: 0 auto;
+  padding: 0px 20px 60px 20px;
+  margin-top: 35px;
+  font-family: roboto;  
+  text-align: left !important;
+ box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.register-form h1 {
+  text-align: left;
+  color:midnightblue ;
+  font-size: 22px;
+  padding: 70px 0 10px 0;
+}
+.register-form input[type="password"],
+.register-form input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ced4da;
+  margin-bottom: 10px;
+  box-sizing:border-box;
+}
+
+/* Estilos boton CANCELAR*/
+.btn-cancel{
+  width: 50%;
+  padding: 15px;
+  background-color: #9CA3AF;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: bold;
+  font-size:medium;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20px;
+  /* Para dar la apariencia de un boton */
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;  
+}
+.btn-cancel:hover,.btn-cancel:active{
+  color:#fff;
+  background-color: #6B7280;
+  border-color:#6B7280
+;
+}
+.btn-cancel:focus{
+  box-shadow:0 0 0 3px #6B7280;
+}
+
+
+
+
+
+
+
+/* registro  */
+
+
+
+
+
+  /* Estilos boton GUARDAR*/
+  .btn-save{
+    width: 50%;
+    padding: 15px;
+    background-color: #1D4ED8;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: bold;
+    font-size:medium;
+    color: #ffffff;
+    margin-top: 20px;
+    /* Para dar la apariencia de un boton */
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;  
+  }
+  .btn-save:hover,.btn-save:active{
+    color:#fff;
+    background-color: #1E3A8A;
+    border-color:#1E3A8A;
+  }
+  .btn-save:focus{
+    box-shadow:0 0 0 3px #1E3A8A;
+  }
+
+  
+  /* FIN REGISTRO  */
+  
+  
+
+  
+
+/* footer  */
+footer {
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    padding: 2% ; /* Espaciado interno */
+    display: flex;
+}
+
+
+h5 {
+    margin-bottom: 4%;
+}
+
+li a {
+
+
+    font-size: 20px;
+    color: black; /* Asegúrate de que este color no se sobrescriba */
+}
+
+a:hover {
+    color: #ffc107 !important; /* Color de los enlaces al hacer hover */
+}
+p2{
+    margin-right:50px;
+    font-size: 50px;
+}
+
+ul li {
+  
+    margin-bottom: 2rem;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .logo img {
+        max-width: 120px; /* Tamaño del logo en pantallas pequeñas */
+    }
+}
+
+
+
+
+/* estilos redes sociales  */
+.social-buttons {
+  position: fixed;
+  right: -80px; /* Posición inicial fuera de la pantalla */
+  top: 50%;
+  transform: translateY(-50%);
+  transition: right 0.3s ease-in-out; /* Transición suave */
+  z-index: 100;
+}
+
+/* Cuando el mouse pasa por el área de los botones */
+.social-buttons:hover {
+  right: 0; /* Mueve los botones dentro de la pantalla al hacer hover */
+}
+
+.social-buttons button {
+  display: block;
+  margin-bottom: 15px;
+  width: 50px;
+  height: 50px;
+  background-color: #e8e8e8;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  transition: transform 0.3s ease;
+}
+
+/* Efecto hover para los botones individuales */
+.social-buttons button:hover {
+  transform: scale(1.2); /* Efecto de aumento al pasar sobre el botón */
+}
+
+/* Agrega un margen en la izquierda para asegurar que el hover no se interrumpa abruptamente */
+.social-buttons:hover::before {
+  position: absolute;
+  right: 100%; /* Añade un área sensible al hover antes de los botones */
+  width: 30px; /* Ajusta el tamaño del área */
+  height: 100%;
+}
+
+.social-buttons button:hover {
+  transform: scale(1.2); /* Efecto de aumento al pasar sobre el botón */
+}
+
+/* Estilos para los SVG y otros elementos */
+svg {
+  width: 100%;
+  height: 100%;
+  fill: #333;
+}
+
+.up, .down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1, .card2, .card3, .card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px; /* Ajuste de esquinas */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.instagram, .facebook, .whatsapp, .gmail {
+  fill: #333; /* Por defecto gris oscuro */
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+}
+
+.card1:hover .instagram {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #1877f2;
+}
+
+.card2:hover .facebook {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #00ff00;
+}
+
+.card3:hover .whatsapp {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #FF0004;
+}
+
+.card4:hover .gmail {
+  fill: white;
+}
+
+
+/* fin redes sociales  */
+
+

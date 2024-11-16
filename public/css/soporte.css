@@ -1,0 +1,254 @@
+/* General Styles */
+* {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px 0;
+    color: rgb(2, 2, 2);
+}
+
+header h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #050505;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #c9c506;
+}
+
+/* Carousel Styles */
+#carousel-section {
+    margin-top: 50px;
+}
+
+.carousel-inner img {
+    height: 650px;
+    object-fit: cover;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    padding: 2% ; /* Espaciado interno */
+    display: flex;
+}
+
+
+h5 {
+    margin-bottom: 2rem;
+}
+
+li a {
+    font-size: 20px;
+    color: black; /* Asegúrate de que este color no se sobrescriba */
+}
+
+a:hover {
+    color: #ffc107 !important; /* Color de los enlaces al hacer hover */
+}
+
+p2{
+    margin-right:90px;
+}
+
+ul li {
+    margin-bottom: 2rem;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .logo img {
+        max-width: 120px; /* Tamaño del logo en pantallas pequeñas */
+    }
+}
+
+
+
+
+/* estilos redes sociales  */
+.social-buttons {
+  position: fixed;
+  right: -80px; /* Posición inicial fuera de la pantalla */
+  top: 50%;
+  transform: translateY(-50%);
+  transition: right 0.3s ease-in-out; /* Transición suave */
+  z-index: 100;
+}
+
+/* Cuando el mouse pasa por el área de los botones */
+.social-buttons:hover {
+  right: 0; /* Mueve los botones dentro de la pantalla al hacer hover */
+}
+
+.social-buttons button {
+  display: block;
+  margin-bottom: 15px;
+  width: 50px;
+  height: 50px;
+  background-color: #e8e8e8;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  transition: transform 0.3s ease;
+}
+
+/* Efecto hover para los botones individuales */
+.social-buttons button:hover {
+  transform: scale(1.2); /* Efecto de aumento al pasar sobre el botón */
+}
+
+/* Agrega un margen en la izquierda para asegurar que el hover no se interrumpa abruptamente */
+.social-buttons:hover::before {
+  position: absolute;
+  right: 100%; /* Añade un área sensible al hover antes de los botones */
+  width: 30px; /* Ajusta el tamaño del área */
+  height: 100%;
+}
+
+.social-buttons button:hover {
+  transform: scale(1.2); /* Efecto de aumento al pasar sobre el botón */
+}
+
+/* Estilos para los SVG y otros elementos */
+svg {
+  width: 100%;
+  height: 100%;
+  fill: #333;
+}
+
+.up, .down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1, .card2, .card3, .card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px; /* Ajuste de esquinas */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.instagram, .facebook, .whatsapp, .gmail {
+  fill: #333; /* Por defecto gris oscuro */
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+}
+
+.card1:hover .instagram {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #1877f2;
+}
+
+.card2:hover .facebook {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #00ff00;
+}
+
+.card3:hover .whatsapp {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #FF0004;
+}
+
+.card4:hover .gmail {
+  fill: white;
+}
+
+
+/* fin redes sociales  */
+

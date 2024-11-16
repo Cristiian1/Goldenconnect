@@ -1,0 +1,507 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    /* padding: 0%; */
+     /* margin: 0%;  */
+}
+
+
+/* nav  */
+
+
+
+.navbar-brand {
+
+color: rgb(248, 248, 248) !important; /* Asegura que el color de la marca siempre sea aliceblue */
+font-weight: 800;
+font-size: 1.5rem;
+transition: color 0.3s;
+}
+
+.navbar-brand:hover {
+color: #ffc107 !important; /* Color de la marca al hacer hover */
+}
+
+/* Estilos para los enlaces de navegación */
+.navbar-nav .nav-link {
+font-size: 130%;
+color: rgb(237, 245, 245) !important; /* Color de los enlaces */
+font-weight: 600;
+transition: color 0.3s;
+    font-size: 130%;
+    margin-right: 20px;
+
+}
+
+.navbar-nav .nav-link:hover {
+color: #ffc107 !important; /* Color de los enlaces al hacer hover */
+}
+
+.navbar-nav .nav-link.active {
+color: aliceblue !important; /* Asegura que el enlace activo sea blanco */
+}
+
+
+
+
+
+/* Navbar toggler redes sociales laterales */
+.navbar-toggler {
+border-color: aliceblue; /* Color del icono del toggler */
+} 
+
+
+
+
+
+
+
+/* estilos redes sociales  */
+.social-buttons {
+position: fixed;
+right: -80px; /* Posición inicial fuera de la pantalla */
+top: 50%;
+transform: translateY(-50%);
+transition: right 0.3s ease-in-out; /* Transición suave */
+z-index: 100;
+}
+
+/* Cuando el mouse pasa por el área de los botones */
+.social-buttons:hover {
+right: 0; /* Mueve los botones dentro de la pantalla al hacer hover */
+}
+
+.social-buttons button {
+display: block;
+margin-bottom: 15px;
+width: 50px;
+height: 50px;
+background-color: #e8e8e8;
+border-radius: 50%;
+border: 2px solid #ddd;
+transition: transform 0.3s ease;
+}
+
+/* Efecto hover para los botones individuales */
+.social-buttons button:hover {
+transform: scale(1.2); /* Efecto de aumento al pasar sobre el botón */
+}
+
+/* Agrega un margen en la izquierda para asegurar que el hover no se interrumpa abruptamente */
+.social-buttons:hover::before {
+position: absolute;
+right: 100%; /* Añade un área sensible al hover antes de los botones */
+width: 30px; /* Ajusta el tamaño del área */
+height: 100%;
+}
+
+.social-buttons button:hover {
+transform: scale(1.2); /* Efecto de aumento al pasar sobre el botón */
+}
+
+/* Estilos para los SVG y otros elementos */
+svg {
+width: 100%;
+height: 100%;
+fill: #333;
+}
+
+.up, .down {
+display: flex;
+flex-direction: row;
+gap: 0.5em;
+}
+
+.card1, .card2, .card3, .card4 {
+width: 90px;
+height: 90px;
+outline: none;
+border: none;
+background: white;
+border-radius: 90px 5px 5px 5px; /* Ajuste de esquinas */
+box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+transition: .2s ease-in-out;
+}
+
+.instagram, .facebook, .whatsapp, .gmail {
+fill: #333; /* Por defecto gris oscuro */
+}
+
+.card1:hover {
+cursor: pointer;
+scale: 1.1;
+background-color: #cc39a4;
+}
+
+.card1:hover .instagram {
+fill: white;
+}
+
+.card2:hover {
+cursor: pointer;
+scale: 1.1;
+background-color: #1877f2;
+}
+
+.card2:hover .facebook {
+fill: white;
+}
+
+.card3:hover {
+cursor: pointer;
+scale: 1.1;
+background-color: #00ff00;
+}
+
+.card3:hover .whatsapp {
+fill: white;
+}
+
+.card4:hover {
+cursor: pointer;
+scale: 1.1;
+background-color: #FF0004;
+}
+
+.card4:hover .gmail {
+fill: white;
+}
+
+
+/* fin redes sociales  */
+
+
+
+
+
+
+
+/* Estilo para hacer el navbar transparente */
+  .container {
+    background-color:transparent; /* Cambia el valor alpha para ajustar la transparencia */
+    position: absolute; /* Asegura que el navbar esté sobre el carrusel */
+    width:30%; /* Asegura que el navbar ocupe todo el ancho */
+    z-index: 10; /* Asegura que el navbar esté por encima del carrusel */
+  }
+
+  
+
+ 
+  a  {
+    color: #000000;
+    padding-right: 1rem ; /* O ajusta este valor según sea necesario */
+    margin-left: 60px; /* Esto empuja el elemento hacia la derecha en un contenedor flex */
+
+}
+.carousel-caption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 2rem; /* Espaciado desde el lado izquierdo */
+    color: rgb(225, 218, 7);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Mejor legibilidad */
+}
+
+
+
+
+
+
+
+
+p {
+    font-size: 1.5rem; /* Tamaño grande para el párrafo */
+    color: #000000; /* Color azul */
+    margin: 0.5rem 0 0;
+}
+
+
+
+
+/* sobre nosotros  */
+.about {
+background-color: transparent;
+text-align: center; 
+margin-left: 15%; /* Ajustamos el espacio debajo del título */
+/* Alinea el texto al centro */
+
+
+}
+
+.section {
+padding: 100px 0;
+text-align: center;
+}
+
+.title {
+margin-bottom: 50px; 
+text-align: center;
+/* Ajustado para menos espacio */
+}
+
+
+
+.about-text {
+font-size: 26px;
+font-style: italic;
+color: #818181;
+margin: 0 auto; /* Centramos el texto */
+max-width: 800px; /* Máxima anchura para el texto */
+line-height: 1.6; /* Mejora la legibilidad */
+}
+
+
+
+/* carrusel  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* servicios */
+
+.section{
+padding: 100px 0;
+display: flex;
+}
+
+.graphic-design{
+background:transparent url(/golden/img/graphic-design.png) no-repeat;
+width: 120px;
+height: 120px;
+display:block;
+}
+.webdevelopment{
+background:transparent url(/golden/img/webdevelopment.png) no-repeat;
+width: 120px;
+height: 120px;
+display:block;
+}
+.printing{
+background:transparent url(/golden/img/printing.png) no-repeat;
+width: 120px;
+height: 120px;
+display:block;
+}
+
+/*ubutia Card*/
+.ubutia-card{
+text-align: center;
+/*margin-bottom: 45px;*/
+}
+.ubutia-card .ubutia-card-header{
+margin-bottom: 45px;
+}
+.ubutia-card .ubutia-card-header .card-icon{
+border-radius: 100%;
+display: inline-block;
+height: 120px;
+width: 120px;
+line-height: 120px;
+position: relative;
+}
+
+
+.button-container {
+margin-top: 20px; /* Espacio entre el texto y el botón */
+}
+
+.btn {
+padding: 12px 24px; /* Espaciado dentro del botón */
+background-color: #4480FF; /* Color de fondo */
+color: #ffffff; /* Color del texto */
+border: none; /* Sin borde */
+border-radius: 25px; /* Bordes más redondeados */
+cursor: pointer; /* Cambia el cursor al pasar el ratón */
+font-size: 16px; /* Tamaño de fuente */
+font-weight: 600; /* Grosor de la fuente */
+transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Efecto de transición */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.btn:hover {
+background-color: #ffc107 !important;  color: #000000 !important; /* Color de la marca al hacer hover */
+/* Color al pasar el ratón */
+transform: translateY(-2px); /* Efecto de movimiento hacia arriba */
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el ratón */
+}
+
+.btn:active {
+transform: translateY(0); /* Vuelve a la posición original al hacer clic */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Regresa la sombra al hacer clic */
+}
+
+
+
+
+
+
+/* CARRUSEL  */
+
+.section {
+padding: 100px 0;
+}
+
+#carousel-section {
+margin-top: 80px; /* Mantener el margen superior para espaciar el carousel */
+}
+
+.carousel-inner img {
+height: 500px; /* Ajusta la altura de las imágenes del carrusel si es necesario */
+object-fit: cover;
+}
+
+.carousel-caption {
+background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para que el texto se vea mejor */
+padding: 15px;
+}
+
+
+/* FIN CARRUSEL  */
+
+
+
+
+
+
+
+
+/* SOPORTE TECNICO  */
+
+.portfolio-item {
+display  : block;
+position : relative;
+overflow : hidden;
+max-width: 430px;
+margin   : auto auto 1rem;
+}
+
+.portfolio-item .caption {
+display         : flex;
+height          : 100%;
+width           : 100%;
+background-color: rgba(33, 37, 41, 0.2);
+position        : absolute;
+top             : 0;
+bottom          : 0;
+z-index         : 1;
+}
+
+.portfolio-item .caption .caption-content {
+color : #fff;
+margin: auto 2rem 2rem;
+}
+
+.portfolio-item .caption .caption-content h2,
+.portfolio-item .caption .caption-content .h2 {
+font-size     : 0.8rem;
+text-transform: uppercase;
+}
+
+.portfolio-item .caption .caption-content p {
+font-weight: 300;
+font-size  : 1.2rem;
+}
+
+/* @media (min-width: 992px) { */
+.portfolio-item {
+max-width: none;
+margin   : 0;
+}
+
+.portfolio-item .caption {
+transition       : background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+transition       : clip-path 0.25s ease-out, background-color 0.7s;
+transition       : clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+-webkit-clip-path: inset(0px);
+clip-path        : inset(0px);
+}
+
+.portfolio-item .caption .caption-content {
+transition   : opacity 0.25s;
+margin-left  : 5rem;
+margin-right : 5rem;
+margin-bottom: 5rem;
+}
+
+.portfolio-item img {
+transition       : -webkit-clip-path 0.25s ease-out;
+transition       : clip-path 0.25s ease-out;
+transition       : clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
+-webkit-clip-path: inset(-1px);
+clip-path        : inset(-1px);
+}
+
+.portfolio-item:hover img {
+-webkit-clip-path: inset(2rem);
+clip-path        : inset(2rem);
+}
+
+.portfolio-item:hover .caption {
+background-color: rgba(5, 100, 5, 0.2);
+-webkit-clip-path: inset(2rem);
+clip-path        : inset(2rem);
+}
+/* fin SOPORTE TECNICO  */
+
+
+
+
+
+
+
+/* footer  */
+footer {
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    padding: 2% ; /* Espaciado interno */
+    display: flex;
+}
+
+
+h5 {
+    margin-bottom: 4%;
+}
+
+li a {
+
+
+    font-size: 20px;
+    color: black; /* Asegúrate de que este color no se sobrescriba */
+}
+
+a:hover {
+    color: #ffc107 !important; /* Color de los enlaces al hacer hover */
+}
+p2{
+    margin-right:50px;
+    font-size: 50px;
+}
+
+ul li {
+  
+    margin-bottom: 2rem;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .logo img {
+        max-width: 120px; /* Tamaño del logo en pantallas pequeñas */
+    }
+}
